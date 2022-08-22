@@ -1,0 +1,9 @@
+Router:
+    Router#erase startup-config
+    Router#delete vlan.dat
+    Router#reload
+
+Switch:
+    Switch#erase startup-config
+    Switch#delete vlan.dat
+    Switch#reload

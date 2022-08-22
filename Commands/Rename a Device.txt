@@ -1,0 +1,15 @@
+Router: 
+    Router(config)#hostname [YOUR DEVICE NEW NAME]
+    end
+
+Switch:
+    Switch(config)#hostname [YOUR DEVICE NEW NAME]
+    end
+
+Example:
+    Router: 
+        Router(config)#hostname A1-R
+        A1-R(config)#end
+    Switch:
+        Switch(config)#hostname A2-Sw
+        A2-Sw(config)#end

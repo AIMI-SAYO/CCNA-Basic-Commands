@@ -2,7 +2,7 @@ Router:
     Router(config)#line vty [CONNECTION PORTS TO THE ROUTER]
     Router(config-line)#password [PASSWORD HERE]
     Router(config-line)#login
-    end
+    Router(config-line)#end
 
 Switch:
     Switch(config)#line vty [CONNECTION PORTS TO THE SWITCH]

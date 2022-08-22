@@ -1,0 +1,34 @@
+Router: 
+    Router(config)#interface [gigabitEthernet/fastEthernet(CONNECTED INTERNET DEVICE)] [CONNECTED INTERNET PORT NUMBER]
+    Router(config-if)#ip address [CONNECTED DEVICE IP] [CONNECTED DEVICE SUBNET MASK]
+    Router(config-if)#exit
+    Router(config)#ip route [ANY REQUESTED IP] [ANY REQUESTED SUBNET MASK] [CONNECTED INTERNET DEVICE PORT]
+
+Switch:
+    *NOT SUPPORTED
+
+Multilayer Switch:
+    Switch(config)#interface [gigabitEthernet/fastEthernet(CONNECTED INTERNET DEVICE)] [CONNECTED INTERNET PORT NUMBER]
+    Switch(config-if)#no switchport
+    Switch(config-if)#ip address [CONNECTED DEVICE IP] [CONNECTED DEVICE SUBNET MASK]
+    Switch(config-if)#exit
+    Switch(config)#ip routing
+    Switch(config)#ip route [ANY REQUESTED IP] [ANY REQUESTED SUBNET MASK] [CONNECTED INTERNET DEVICE PORT]
+
+Example:
+    Router: 
+        Router(config)#interface gigabitEthernet 0/0/0
+        Router(config-if)#ip address 203.0.113.2 255.255.255.252
+        Router(config-if)#exit
+        Router(config)#ip route 0.0.0.0 0.0.0.0 203.0.113.1
+
+    Switch:
+        *NOT SUPPORTED
+
+    Multilayer Switch:
+        Switch(config)#interface fastEthernet 0/1
+        Switch(config-if)#no switchport
+        Switch(config-if)#ip address 80.0.101.2 255.255.255.252
+        Switch(config-if)#exit
+        Switch(config)#ip routing
+        Switch(config)#ip route 0.0.0.0 0.0.0.0 80.0.101.1

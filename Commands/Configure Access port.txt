@@ -1,0 +1,26 @@
+Router: 
+    *NOT SUPPORTED
+
+Switch:
+    Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
+    Switch(config-if)#switchport mode access
+    Switch(config-if)#switchport access vlan [VLAN ID]
+
+Multilayer Switch:
+    Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
+    Switch(config-if)#switchport mode access 
+    Switch(config-if)#switchport access vlan [VLAN ID]
+
+Example:
+    Router: 
+        *NOT SUPPORTED
+
+    Switch:
+        Switch(config)#interface fastEthernet 0/1
+        Switch(config-if)#switchport mode access
+        Switch(config-if)#switchport access vlan 10
+
+    Multilayer Switch:
+        Switch(config)#interface gigabitEthernet 0/1
+        Switch(config-if)#switchport mode access
+        Switch(config-if)#switchport access vlan 10

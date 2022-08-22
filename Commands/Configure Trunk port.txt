@@ -1,0 +1,24 @@
+Router: 
+    *NOT SUPPORTED
+
+Switch:
+    Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
+    Switch(config-if)#switchport mode trunk 
+
+Multilayer Switch:
+    Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
+    Switch(config-if)#switchport trunk encapsulation dot1q
+    Switch(config-if)#switchport mode trunk 
+
+Example:
+    Router: 
+        *NOT SUPPORTED
+
+    Switch:
+        Switch(config)#interface fastEthernet 0/1
+        Switch(config-if)#switchport mode trunk 
+
+    Multilayer Switch:
+        Switch(config)#interface gigabitEthernet 0/1
+        Switch(config-if)#switchport trunk encapsulation dot1q
+        Switch(config-if)#switchport mode trunk

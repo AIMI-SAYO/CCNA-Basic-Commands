@@ -4,9 +4,7 @@ Router:
     Router(config-if)#no shutdown 
 
 Switch:
-    Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
-    Switch(config-if)#no switchport 
-    Switch(config-if)#ip address [IP] [SUBNET MASK]
+    *NOT SUPPORTED
 
 Multilayer Switch:
     Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
@@ -20,9 +18,7 @@ Example:
         Router(config-if)#no shutdown 
 
     Switch:
-        Switch(config)#interface fastEthernet 0/1
-        Switch(config-if)#no switchport 
-        Switch(config-if)#ip address 10.10.10.1 255.255.255.252
+        *NOT SUPPORTED
 
     Multilayer Switch:
         Switch(config)#interface gigabitEthernet 0/0

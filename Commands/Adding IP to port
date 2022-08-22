@@ -1,0 +1,20 @@
+Router: 
+    Router(config)#interface [gigabitEthernet/fastEthernet] [Port Number]
+    Router(config-if)#ip address [IP] [Subnet Mask]
+    Router(config-if)#no shutdown 
+
+Switch:
+    Switch(config)#interface [gigabitEthernet/fastEthernet] [Port Number]
+    Switch(config-if)#no switchport 
+    Switch(config-if)#ip address [IP] [Subnet Mask]
+
+Example:
+    Router: 
+        Router(config)#interface gigabitEthernet 0/0/0
+        Router(config-if)#ip address 192.168.1.1 255.255.255.0
+        Router(config-if)#no shutdown 
+
+    Switch:
+        Switch(config)#interface fastEthernet 0/1
+        Switch(config-if)#no switchport 
+        Switch(config-if)#ip address 10.10.10.1 255.255.255.252

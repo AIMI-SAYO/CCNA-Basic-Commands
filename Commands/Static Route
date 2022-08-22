@@ -2,8 +2,7 @@ Router:
     Router(config)#ip route [DESTINATION NETWORK] [SUBNET MASK] [GATEWAY/NEXT-HOP]
 
 Switch:
-    Switch(config)#ip routing
-    Switch(config)#ip route [DESTINATION NETWORK] [SUBNET MASK] [GATEWAY/NEXT-HOP]
+    *NOT SUPPORTED
 
 Multilayer Switch:
     Switch(config)#ip routing
@@ -14,8 +13,7 @@ Example:
         Router(config)#ip route 10.10.10.0 255.255.255.252 10.2.2.2
 
     Switch:
-        Switch(config)#ip routing
-        Switch(config)#ip route 192.168.1.0 255.255.255.0 10.10.10.1
+        *NOT SUPPORTED
 
     Multilayer Switch:
         Switch(config)#ip routing

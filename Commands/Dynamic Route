@@ -1,0 +1,23 @@
+Router: 
+    Router(config)#router ospf [OSPF ID (1-65535)]
+    Router(config-router)#network [DIRECTLY CONNECTED NETWORK] [WILDCARD MASK] area [OSPF AREA IDENTIFIER (0-4294967295)]
+
+Switch:
+    *NOT SUPPORTED
+
+Multilayer Switch:
+    Switch(config)#ip routing
+    Switch(config)#router ospf [OSPF ID (1-65535)]
+    Switch(config)#network [DIRECTLY CONNECTED NETWORK] [WILDCARD MASK] area [OSPF AREA IDENTIFIER (0-4294967295)]
+
+Example:
+    Router: 
+        Router(config)#router ospf 1
+        Router(config-router)#network 10.10.10.0 0.0.0.3 area 0
+
+    Switch:
+        *NOT SUPPORTED
+
+    Multilayer Switch:
+        Router(config)#router ospf 2022
+        Router(config-router)#network 192.168.1.0 0.0.0.255 area 4

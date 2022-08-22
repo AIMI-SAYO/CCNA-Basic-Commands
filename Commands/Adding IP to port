@@ -1,12 +1,12 @@
 Router: 
-    Router(config)#interface [gigabitEthernet/fastEthernet] [Port Number]
-    Router(config-if)#ip address [IP] [Subnet Mask]
+    Router(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
+    Router(config-if)#ip address [IP] [SUBNET MASK]
     Router(config-if)#no shutdown 
 
 Switch:
-    Switch(config)#interface [gigabitEthernet/fastEthernet] [Port Number]
+    Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
     Switch(config-if)#no switchport 
-    Switch(config-if)#ip address [IP] [Subnet Mask]
+    Switch(config-if)#ip address [IP] [SUBNET MASK]
 
 Example:
     Router: 

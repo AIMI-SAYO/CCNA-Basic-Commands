@@ -1,0 +1,11 @@
+Router: 
+    Router(config)#ip route []
+
+Switch:
+    
+
+Example:
+    Router: 
+        
+    Switch:
+        

@@ -1,0 +1,30 @@
+Router: 
+    Router(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
+    Router(config-if)#no shutdown 
+    Router(config-if)#exit
+    Router(config)#interface [gigabitEthernet/fastEthernet] [SUB-PORT NUMBER]
+    Router(config-subif)#encapsulation dot1Q [SUB-PORT NUMBER]
+
+Switch:
+    Switch(config)#vlan [VLAN PORT ID]
+    Switch(config-vlan)#name [NEW VLAN NAME]
+
+Multilayer Switch:
+    Switch(config)#vlan [VLAN PORT ID]
+    Switch(config-vlan)#name [NEW VLAN NAME]
+
+Example:
+    Router: 
+        Router(config)#interface gigabitEthernet 0/0/0
+        Router(config-if)#no shutdown 
+        Router(config-if)#exit
+        Router(config)#interface gigabitEthernet 0/0/0.10
+        Router(config-subif)#encapsulation dot1Q 10
+
+    Switch:
+        Switch(config)#vlan 20
+        Switch(config-vlan)#name Developers
+
+    Multilayer Switch:
+        Switch(config)#vlan 30
+        Switch(config-vlan)#name IndianScamCenter

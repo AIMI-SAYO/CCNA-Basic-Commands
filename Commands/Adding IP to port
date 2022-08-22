@@ -8,6 +8,11 @@ Switch:
     Switch(config-if)#no switchport 
     Switch(config-if)#ip address [IP] [SUBNET MASK]
 
+Multilayer Switch:
+    Switch(config)#interface [gigabitEthernet/fastEthernet] [PORT NUMBER]
+    Switch(config-if)#no switchport 
+    Switch(config-if)#ip address [IP] [SUBNET MASK]
+
 Example:
     Router: 
         Router(config)#interface gigabitEthernet 0/0/0
@@ -18,3 +23,8 @@ Example:
         Switch(config)#interface fastEthernet 0/1
         Switch(config-if)#no switchport 
         Switch(config-if)#ip address 10.10.10.1 255.255.255.252
+
+    Multilayer Switch:
+        Switch(config)#interface gigabitEthernet 0/0
+        Switch(config-if)#no switchport 
+        Switch(config-if)#ip address 172.16.1.1 255.255.255.0

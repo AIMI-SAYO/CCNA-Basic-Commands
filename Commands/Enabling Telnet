@@ -9,6 +9,11 @@ Switch:
     Switch(config-line)#password [PASSWORD HERE]
     Switch(config-line)#login
 
+Multilayer Switch:
+    Switch(config)#line vty [CONNECTION PORTS TO THE SWITCH]
+    Switch(config-line)#password [PASSWORD HERE]
+    Switch(config-line)#login
+
 Example:
     Router: 
         Router(config)#line vty 0 4
@@ -18,6 +23,11 @@ Example:
     Switch:
         Switch(config)#line vty 0 5
         Switch(config-line)#password qwe123
+        Switch(config-line)#login
+
+    Multilayer Switch:
+        Switch(config)#line vty 0 15
+        Switch(config-line)#password UngaBunga
         Switch(config-line)#login
 
 Tips:

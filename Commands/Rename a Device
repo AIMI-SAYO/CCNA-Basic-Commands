@@ -1,15 +1,24 @@
 Router: 
     Router(config)#hostname [YOUR DEVICE NEW NAME]
-    end
+    Router(config)#end
 
 Switch:
     Switch(config)#hostname [YOUR DEVICE NEW NAME]
-    end
+    Switch(config)#end
+
+Multilayer Switch:
+    Switch(config)#hostname [YOUR DEVICE NEW NAME]
+    Switch(config)#end
 
 Example:
     Router: 
         Router(config)#hostname A1-R
         A1-R(config)#end
+
     Switch:
         Switch(config)#hostname A2-Sw
         A2-Sw(config)#end
+
+        Multilayer Switch:
+        Switch(config)#hostname B5-MS
+        B5-MS(config)#end

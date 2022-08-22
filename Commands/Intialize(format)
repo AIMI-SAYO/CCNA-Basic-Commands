@@ -7,3 +7,8 @@ Switch:
     Switch#erase startup-config
     Switch#delete vlan.dat
     Switch#reload
+
+Multilayer Switch:
+    Switch#erase startup-config
+    Switch#delete vlan.dat
+    Switch#reload

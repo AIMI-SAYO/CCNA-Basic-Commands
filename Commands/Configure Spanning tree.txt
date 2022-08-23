@@ -1,0 +1,43 @@
+Methond 1:
+    Router: 
+        After 7 hops in daisy-chained network, STP algorithm begins to breakdown
+
+    Switch:
+        Switch(config)#spanning-tree vlan [VLAN ID] priority [BRIDGE PRIORITY NUMBER (0 4096 8192 12288 16384 20480 24576 28672 32768 36864 40960 45056 49152 53248 57344 61440)]
+
+    Multilayer Switch:
+        Switch(config)#spanning-tree vlan [VLAN ID] priority [BRIDGE PRIORITY NUMBER (0 4096 8192 12288 16384 20480 24576 28672 32768 36864 40960 45056 49152 53248 57344 61440)]
+
+    Example:
+        Router: 
+            *NOT RECOMMENDED, USE ROUTER IN PLACE BEFORE SWITCHES
+
+        Switch:
+            Switch(config)#spanning-tree vlan 10 priority 4096
+
+        Multilayer Switch:
+            Switch(config)#spanning-tree vlan 30 priority 0
+
+Methond 2: 
+    Router: 
+        After 7 hops in daisy-chained network, STP algorithm begins to breakdown
+
+    Switch:
+        Switch(config)#spanning-tree vlan [VLAN ID] root [primary/secondary]
+            primary   = Configure this switch as primary root for this spanning tree
+            secondary = Configure switch as secondary root
+
+    Multilayer Switch:
+        Switch(config)#spanning-tree vlan [VLAN ID] root [primary/secondary]
+            primary   = Configure this switch as primary root for this spanning tree
+            secondary = Configure switch as secondary root
+
+    Example:
+        Router: 
+            *NOT RECOMMENDED, USE ROUTER IN PLACE BEFORE SWITCHES
+
+        Switch:
+            Switch(config)#spanning-tree vlan 2 root primary
+
+        Multilayer Switch:
+            Switch(config)#spanning-tree vlan 99 root secondary

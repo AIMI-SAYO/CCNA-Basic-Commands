@@ -1,0 +1,78 @@
+Router: 
+    Router>enable 
+    Router#configure terminal
+    Router(config)#line console [CONSOLE PORT NUMBER]
+    Router(config-line)#password cisco
+    Router(config-line)#login
+    Router(config-line)#exit
+    Router(config)#line vty [CONNECTION PORTS TO THE ROUTER]
+    Router(config-line)#password [PASSWORD HERE]
+    Router(config-line)#login
+    Router(config-line)#exit
+    Router(config)#service password-encryption 
+
+Switch:
+    Switch>enable 
+    Switch#configure terminal
+    Switch(config)#line console [CONSOLE PORT NUMBER]
+    Switch(config-line)#password cisco
+    Switch(config-line)#login
+    Switch(config-line)#exit
+    Switch(config)#line vty [CONNECTION PORTS TO THE SWITCH]
+    Switch(config-line)#password [PASSWORD HERE]
+    Switch(config-line)#login
+    Switch(config-line)#exit
+    Switch(config)#service password-encryption 
+
+Multilayer Switch:
+    Switch>enable 
+    Switch#configure terminal
+    Switch(config)#line console [CONSOLE PORT NUMBER]
+    Switch(config-line)#password cisco
+    Switch(config-line)#login
+    Switch(config-line)#exit
+    Switch(config)#line vty [CONNECTION PORTS TO THE SWITCH]
+    Switch(config-line)#password [PASSWORD HERE]
+    Switch(config-line)#login
+    Switch(config-line)#exit
+    Switch(config)#service password-encryption 
+
+Example:
+    Router: 
+        Router>enable 
+        Router#configure terminal
+        Router(config)#line console 0
+        Router(config-line)#password cisco
+        Router(config-line)#login
+        Router(config-line)#exit
+        Router(config)#line vty 0 4
+        Router(config-line)#password cisco
+        Router(config-line)#login
+        Router(config-line)#exit
+        Router(config)#service password-encryption 
+
+    Switch:
+        Switch>enable 
+        Switch#configure terminal
+        Switch(config)#line console 0
+        Switch(config-line)#password cisco
+        Switch(config-line)#login
+        Switch(config-line)#exit
+        Switch(config)#line vty 0 2
+        Switch(config-line)#password cisco
+        Switch(config-line)#login
+        Switch(config-line)#exit
+        Switch(config)#service password-encryption 
+
+    Multilayer Switch:
+        Switch>enable 
+        Switch#configure terminal
+        Switch(config)#line console 0
+        Switch(config-line)#password cisco
+        Switch(config-line)#login
+        Switch(config-line)#exit
+        Switch(config)#line vty 0 4
+        Switch(config-line)#password cisco
+        Switch(config-line)#login
+        Switch(config-line)#exit
+        Switch(config)#service password-encryption 

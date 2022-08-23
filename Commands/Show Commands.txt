@@ -1,0 +1,4 @@
+Device#show ip interface brief         | Brief summary of IP status and configuration
+Device#show running-config             | Current operating configuration
+Device#show startup-config             | Contents of startup configuration
+Device##show ip route                  | IP routing table

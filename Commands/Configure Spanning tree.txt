@@ -24,11 +24,13 @@ Methond 2:
 
     Switch:
         Switch(config)#spanning-tree vlan [VLAN ID] root [primary/secondary]
+
             primary   = Configure this switch as primary root for this spanning tree
             secondary = Configure switch as secondary root
 
     Multilayer Switch:
         Switch(config)#spanning-tree vlan [VLAN ID] root [primary/secondary]
+        
             primary   = Configure this switch as primary root for this spanning tree
             secondary = Configure switch as secondary root
 

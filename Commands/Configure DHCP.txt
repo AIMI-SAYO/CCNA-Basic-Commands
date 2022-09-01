@@ -1,0 +1,26 @@
+Router: 
+    Router(config)#ip dhcp excluded-address [FIRST IP] [LAST IP]
+    Router(config)#ip dhcp pool [POOL NAME]
+    Router(config-if)#ip address [NETWORK IP] [NETWORK SUBNET MASK]
+    Router(dhcp-config)#default-router [ROUTER'S IP ADDRESS]
+    Router(dhcp-config)#dns-server [DNS ADDRESS]
+
+Switch:
+    
+
+Multilayer Switch:
+    
+
+Example:
+    Router: 
+        Router(config)#ip dhcp excluded-address 10.10.10.1 10.10.10.10
+        Router(config)#ip dhcp pool LAN-1
+        Router(config-if)#ip address 10.10.10.0 255.255.255.0
+        Router(dhcp-config)#default-router 10.10.10.1
+        Router(dhcp-config)#dns-server 8.8.8.8
+
+    Switch:
+        
+
+    Multilayer Switch:
+        
